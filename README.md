@@ -29,7 +29,6 @@ really a list containing a function to
 
 <!-- -->
 
-#### makeCacheMatrix
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
     set <- function(y){
@@ -41,8 +40,6 @@ makeCacheMatrix <- function(x = matrix()) {
   get_Inverse <- function() inverse
   list(set = set, get = get, setInverse = setInverse, getInverse = getInverse)
 }
-
-
 
 
 The following function calculates the mean of the special "vector"
@@ -65,7 +62,6 @@ cacheSolve <- function(x, ...) {
   inverse      
 }
 
-### Assignment: Caching the Inverse of a Matrix
 
 Matrix inversion is usually a costly computation and there may be some
 benefit to caching the inverse of a matrix rather than computing it
